@@ -7,7 +7,7 @@ public class Logic {
 
     public static boolean validateOpen(String symbol) {
         return openSymbols.contains(symbol);
-    }
+    } // No se usa
 
     public static boolean validateClose(String symbol) {
         return closeSymbols.contains(symbol);
@@ -49,11 +49,13 @@ public class Logic {
 
     public static void main(String[] args) {
         List<String> inputString = Arrays.asList("(", ")", "{", "}", "[", "]");
-        System.out.println(validateChain(inputString));
-        System.out.println(validateChain(Arrays.asList("{", "}", "{", "}", ")", ")")));
-        System.out.println(validateChain(Arrays.asList("{", "]", "{", "}", "[", "]")));
-        System.out.println(validateChain(Arrays.asList("{", "}", "[", "]")));
-        System.out.println(validateChain(Arrays.asList("(", "{", "{", "}", "}", ")")));
-        System.out.println(validateChain(Arrays.asList("(", "{", "[", "]", "}", ")")));
+//        System.out.println(validateChain(inputString));
+//        System.out.println(validateChain(Arrays.asList("{", "}", "{", "}", ")", ")")));
+//        System.out.println(validateChain(Arrays.asList("{", "]", "{", "}", "[", "]")));
+//        System.out.println(validateChain(Arrays.asList("{", "}", "[", "]")));
+//        System.out.println(validateChain(Arrays.asList("(", "{", "{", "}", "}", ")")));
+//        System.out.println(validateChain(Arrays.asList("(", "{", "[", "]", "}", ")")));
+        System.out.println(validateChain(Arrays.asList("{", "{", "{", "}", "}", ")")));
+
     }
 }
